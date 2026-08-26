@@ -1,0 +1,64 @@
+{
+  "shipment_id": "AUSYD-2026-0041",
+  "documents": [
+    "bill_of_lading.pdf",
+    "certificate_of_origin.pdf",
+    "commercial_invoice.pdf",
+    "packing_list.pdf",
+    "vgm_certificate.pdf"
+  ],
+  "expected_findings": [],
+  "is_clean": true,
+  "true_values": {
+    "shipment_id": "AUSYD-2026-0041",
+    "cargo_type": "FCL",
+    "invoice_number": "INV/8837/2026",
+    "invoice_date": "2026-04-01",
+    "exporter_name": "Rajesh Textiles Pvt Ltd",
+    "exporter_country": "India",
+    "importer_name": "Coastline Apparel Pty Ltd",
+    "importer_country": "Australia",
+    "origin_country": "India",
+    "incoterms": "FOB",
+    "currency": "USD",
+    "goods_value": 61180.0,
+    "invoice_total": 61180.0,
+    "line_items": [
+      {
+        "description": "Cotton Bath Towels",
+        "hs_code": "6302.60",
+        "quantity": 2000,
+        "unit_price": 19.4,
+        "line_total": 38800.0
+      },
+      {
+        "description": "Rubber Floor Mats",
+        "hs_code": "4016.91",
+        "quantity": 2000,
+        "unit_price": 11.19,
+        "line_total": 22380.0
+      }
+    ],
+    "total_packages": 292,
+    "total_net_weight_kg": 5099.882,
+    "total_gross_weight_kg": 5734.232,
+    "total_cbm": 31.68,
+    "container_number": "TGHU8315399",
+    "container_size_type": "40HC",
+    "seal_number": "SL6003487",
+    "vgm_kg": 9654.05,
+    "vessel_name": "MSC RITA",
+    "vessel_imo": "9484469",
+    "voyage_number": "300N",
+    "port_of_loading": "INNSA",
+    "port_of_discharge": "AUSYD",
+    "bl_date": "2026-04-06",
+    "etd": "2026-04-06",
+    "eta": "2026-04-30",
+    "master_bl_number": "CMDU739128608",
+    "house_bl_number": null,
+    "coo_number": "CO/2026029/383",
+    "coo_issue_date": "2026-04-06",
+    "has_wooden_packaging": false
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "shipment_id": "AUMEL-2026-0035",
+  "documents": [
+    "bill_of_lading.pdf",
+    "certificate_of_origin.pdf",
+    "commercial_invoice.pdf",
+    "packing_list.pdf",
+    "vgm_certificate.pdf"
+  ],
+  "expected_findings": [
+    {
+      "type": "DATE_SEQUENCE_INVALID",
+      "severity": "WARNING",
+      "summary": "Certificate of origin is dated after the bill of lading",
+      "sources": [
+        "certificate_of_origin.issue_date",
+        "bill_of_lading.date"
+      ],
+      "details": {
+        "coo_issue_date": "2026-04-27",
+        "bl_date": "2026-04-23"
+      }
+    },
+    {
+      "type": "WEIGHT_VARIANCE",
+      "severity": "WARNING",
+      "summary": "Gross weight differs between packing list and bill of lading",
+      "sources": [
+        "packing_list.total_gross_weight_kg",
+        "bill_of_lading.gross_weight_kg"
+      ],
+      "details": {
+        "packing_list_kg": 1647.856,
+        "bill_of_lading_kg": 1566.122,
+        "variance_pct": 4.96
+      }
+    },
+    {
+      "type": "CONSIGNEE_MISMATCH",
+      "severity": "WARNING",
+      "summary": "Consignee name differs between invoice and bill of lading",
+      "sources": [
+        "invoice.importer.name",
+        "bill_of_lading.importer.name"
+      ],
+      "details": {
+        "invoice": "Coastline Apparel Pty Ltd",
+        "bill_of_lading": "Coastline International Pty Ltd"
+      }
+    }
+  ],
+  "is_clean": false,
+  "true_values": {
+    "shipment_id": "AUMEL-2026-0035",
+    "cargo_type": "LCL",
+    "invoice_number": "INV/7324/2026",
+    "invoice_date": "2026-04-12",
+    "exporter_name": "Coromandel Exports Ltd",
+    "exporter_country": "India",
+    "importer_name": "Coastline Apparel Pty Ltd",
+    "importer_country": "Australia",
+    "origin_country": "India",
+    "incoterms": "CIF",
+    "currency": "USD",
+    "goods_value": 75056.0,
+    "invoice_total": 76810.1,
+    "line_items": [
+      {
+        "description": "Cotton Bath Towels",
+        "hs_code": "6302.60",
+        "quantity": 800,
+        "unit_price": 18.31,
+        "line_total": 14648.0
+      },
+      {
+        "description": "Ceramic Tableware, Porcelain",
+        "hs_code": "6911.10",
+        "quantity": 400,
+        "unit_price": 17.88,
+        "line_total": 7152.0
+      },
+      {
+        "description": "Ladies Blouses, Woven Polyester",
+        "hs_code": "6206.40",
+        "quantity": 800,
+        "unit_price": 12.38,
+        "line_total": 9904.0
+      },
+      {
+        "description": "Leather Handbags",
+        "hs_code": "4202.21",
+        "quantity": 800,
+        "unit_price": 54.19,
+        "line_total": 43352.0
+      }
+    ],
+    "total_packages": 72,
+    "total_net_weight_kg": 1519.996,
+    "total_gross_weight_kg": 1647.856,
+    "total_cbm": 5.622,
+    "container_number": "OOLU4741950",
+    "container_size_type": "20GP",
+    "seal_number": "SL6490514",
+    "vgm_kg": 3902.571,
+    "vessel_name": "CMA CGM CENDRILLON",
+    "vessel_imo": "9410046",
+    "voyage_number": "366S",
+    "port_of_loading": "INMAA",
+    "port_of_discharge": "AUMEL",
+    "bl_date": "2026-04-23",
+    "etd": "2026-04-23",
+    "eta": "2026-05-10",
+    "master_bl_number": "CMDU860457080",
+    "house_bl_number": "HBL9341208",
+    "coo_number": "CO/2026407/113",
+    "coo_issue_date": "2026-04-13",
+    "has_wooden_packaging": false
+  }
+}

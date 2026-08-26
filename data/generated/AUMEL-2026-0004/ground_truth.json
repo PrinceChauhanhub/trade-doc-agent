@@ -1,0 +1,71 @@
+{
+  "shipment_id": "AUMEL-2026-0004",
+  "documents": [
+    "bill_of_lading.pdf",
+    "certificate_of_origin.pdf",
+    "commercial_invoice.pdf",
+    "packing_list.pdf",
+    "vgm_certificate.pdf"
+  ],
+  "expected_findings": [
+    {
+      "type": "PACKAGE_COUNT_MISMATCH",
+      "severity": "WARNING",
+      "summary": "Package count differs between packing list and bill of lading",
+      "sources": [
+        "packing_list.total_packages",
+        "bill_of_lading.package_count"
+      ],
+      "details": {
+        "packing_list": 7,
+        "bill_of_lading": 6
+      }
+    }
+  ],
+  "is_clean": false,
+  "true_values": {
+    "shipment_id": "AUMEL-2026-0004",
+    "cargo_type": "LCL",
+    "invoice_number": "INV/6369/2026",
+    "invoice_date": "2026-04-07",
+    "exporter_name": "Punjab Cotton Mills",
+    "exporter_country": "India",
+    "importer_name": "Coastline Apparel Pty Ltd",
+    "importer_country": "Australia",
+    "origin_country": "India",
+    "incoterms": "FOB",
+    "currency": "USD",
+    "goods_value": 24272.0,
+    "invoice_total": 24272.0,
+    "line_items": [
+      {
+        "description": "Ladies Blouses, Woven Polyester",
+        "hs_code": "6206.40",
+        "quantity": 800,
+        "unit_price": 30.34,
+        "line_total": 24272.0
+      }
+    ],
+    "total_packages": 7,
+    "total_net_weight_kg": 120.001,
+    "total_gross_weight_kg": 130.06,
+    "total_cbm": 0.425,
+    "container_number": "MAEU9681290",
+    "container_size_type": "40GP",
+    "seal_number": "SL6458394",
+    "vgm_kg": 3915.829,
+    "vessel_name": "OOCL BRISBANE",
+    "vessel_imo": "9622889",
+    "voyage_number": "413W",
+    "port_of_loading": "INNSA",
+    "port_of_discharge": "AUMEL",
+    "bl_date": "2026-04-14",
+    "etd": "2026-04-14",
+    "eta": "2026-05-01",
+    "master_bl_number": "MSCU119427193",
+    "house_bl_number": "HBL3633440",
+    "coo_number": "CO/2026205/978",
+    "coo_issue_date": "2026-04-12",
+    "has_wooden_packaging": false
+  }
+}

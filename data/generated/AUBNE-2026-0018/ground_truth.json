@@ -1,0 +1,84 @@
+{
+  "shipment_id": "AUBNE-2026-0018",
+  "documents": [
+    "bill_of_lading.pdf",
+    "certificate_of_origin.pdf",
+    "commercial_invoice.pdf",
+    "packing_list.pdf",
+    "vgm_certificate.pdf"
+  ],
+  "expected_findings": [
+    {
+      "type": "HS_CODE_MISMATCH",
+      "severity": "CRITICAL",
+      "summary": "HS code differs between invoice and certificate of origin",
+      "sources": [
+        "invoice.line_items[0].hs_code",
+        "certificate_of_origin.hs_code"
+      ],
+      "details": {
+        "invoice": "4202.21",
+        "coo": "4203.21"
+      }
+    },
+    {
+      "type": "PACKAGE_COUNT_MISMATCH",
+      "severity": "WARNING",
+      "summary": "Package count differs between packing list and bill of lading",
+      "sources": [
+        "packing_list.total_packages",
+        "bill_of_lading.package_count"
+      ],
+      "details": {
+        "packing_list": 218,
+        "bill_of_lading": 219
+      }
+    }
+  ],
+  "is_clean": false,
+  "true_values": {
+    "shipment_id": "AUBNE-2026-0018",
+    "cargo_type": "FCL",
+    "invoice_number": "INV/9793/2026",
+    "invoice_date": "2026-06-23",
+    "exporter_name": "Gujarat Handicrafts Co",
+    "exporter_country": "India",
+    "importer_name": "Westline Trading Pty Ltd",
+    "importer_country": "Australia",
+    "origin_country": "India",
+    "incoterms": "CIF",
+    "currency": "USD",
+    "goods_value": 425160.0,
+    "invoice_total": 437702.58,
+    "line_items": [
+      {
+        "description": "Leather Handbags",
+        "hs_code": "4202.21",
+        "quantity": 6000,
+        "unit_price": 70.86,
+        "line_total": 425160.0
+      }
+    ],
+    "total_packages": 218,
+    "total_net_weight_kg": 5099.892,
+    "total_gross_weight_kg": 5425.148,
+    "total_cbm": 21.8,
+    "container_number": "GESU9995180",
+    "container_size_type": "40GP",
+    "seal_number": "SL7482119",
+    "vgm_kg": 9184.674,
+    "vessel_name": "MSC RITA",
+    "vessel_imo": "9484469",
+    "voyage_number": "414S",
+    "port_of_loading": "INMAA",
+    "port_of_discharge": "AUBNE",
+    "bl_date": "2026-07-06",
+    "etd": "2026-07-06",
+    "eta": "2026-07-21",
+    "master_bl_number": "MAEU659143143",
+    "house_bl_number": null,
+    "coo_number": "CO/2026263/526",
+    "coo_issue_date": "2026-06-29",
+    "has_wooden_packaging": false
+  }
+}

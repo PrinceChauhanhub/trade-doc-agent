@@ -1,0 +1,71 @@
+{
+  "shipment_id": "AUFRE-2026-0048",
+  "documents": [
+    "bill_of_lading.pdf",
+    "certificate_of_origin.pdf",
+    "commercial_invoice.pdf",
+    "packing_list.pdf",
+    "vgm_certificate.pdf"
+  ],
+  "expected_findings": [
+    {
+      "type": "CONSIGNEE_MISMATCH",
+      "severity": "WARNING",
+      "summary": "Consignee name differs between invoice and bill of lading",
+      "sources": [
+        "invoice.importer.name",
+        "bill_of_lading.importer.name"
+      ],
+      "details": {
+        "invoice": "Southern Cross Homewares",
+        "bill_of_lading": "Southern International Pty Ltd"
+      }
+    }
+  ],
+  "is_clean": false,
+  "true_values": {
+    "shipment_id": "AUFRE-2026-0048",
+    "cargo_type": "LCL",
+    "invoice_number": "INV/4837/2026",
+    "invoice_date": "2026-04-24",
+    "exporter_name": "Punjab Cotton Mills",
+    "exporter_country": "India",
+    "importer_name": "Southern Cross Homewares",
+    "importer_country": "Australia",
+    "origin_country": "India",
+    "incoterms": "CIF",
+    "currency": "USD",
+    "goods_value": 41800.0,
+    "invoice_total": 42885.9,
+    "line_items": [
+      {
+        "description": "Wooden Photo Frames",
+        "hs_code": "4414.90",
+        "quantity": 2000,
+        "unit_price": 20.9,
+        "line_total": 41800.0
+      }
+    ],
+    "total_packages": 50,
+    "total_net_weight_kg": 1100.0,
+    "total_gross_weight_kg": 1251.35,
+    "total_cbm": 2.45,
+    "container_number": "CMAU5537044",
+    "container_size_type": "40HC",
+    "seal_number": "SL1432297",
+    "vgm_kg": 5185.494,
+    "vessel_name": "OOCL BRISBANE",
+    "vessel_imo": "9622889",
+    "voyage_number": "314W",
+    "port_of_loading": "INCOK",
+    "port_of_discharge": "AUFRE",
+    "bl_date": "2026-05-05",
+    "etd": "2026-05-05",
+    "eta": "2026-05-25",
+    "master_bl_number": "MAEU918855375",
+    "house_bl_number": "HBL8722584",
+    "coo_number": "CO/2026922/212",
+    "coo_issue_date": "2026-04-29",
+    "has_wooden_packaging": false
+  }
+}

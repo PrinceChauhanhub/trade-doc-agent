@@ -1,0 +1,64 @@
+{
+  "shipment_id": "AUBNE-2026-0027",
+  "documents": [
+    "bill_of_lading.pdf",
+    "certificate_of_origin.pdf",
+    "commercial_invoice.pdf",
+    "packing_list.pdf",
+    "vgm_certificate.pdf"
+  ],
+  "expected_findings": [],
+  "is_clean": true,
+  "true_values": {
+    "shipment_id": "AUBNE-2026-0027",
+    "cargo_type": "LCL",
+    "invoice_number": "INV/2039/2026",
+    "invoice_date": "2026-03-27",
+    "exporter_name": "Coromandel Exports Ltd",
+    "exporter_country": "India",
+    "importer_name": "Southern Cross Homewares",
+    "importer_country": "Australia",
+    "origin_country": "India",
+    "incoterms": "EXW",
+    "currency": "USD",
+    "goods_value": 31892.0,
+    "invoice_total": 31892.0,
+    "line_items": [
+      {
+        "description": "Brass Decorative Items",
+        "hs_code": "8306.29",
+        "quantity": 400,
+        "unit_price": 49.47,
+        "line_total": 19788.0
+      },
+      {
+        "description": "Stainless Steel Kitchenware",
+        "hs_code": "7323.93",
+        "quantity": 800,
+        "unit_price": 15.13,
+        "line_total": 12104.0
+      }
+    ],
+    "total_packages": 94,
+    "total_net_weight_kg": 1519.995,
+    "total_gross_weight_kg": 1723.189,
+    "total_cbm": 8.874,
+    "container_number": "OOLU7651697",
+    "container_size_type": "20GP",
+    "seal_number": "SL8060842",
+    "vgm_kg": 3963.869,
+    "vessel_name": "OOCL BRISBANE",
+    "vessel_imo": "9622889",
+    "voyage_number": "284E",
+    "port_of_loading": "INNSA",
+    "port_of_discharge": "AUBNE",
+    "bl_date": "2026-04-10",
+    "etd": "2026-04-10",
+    "eta": "2026-04-26",
+    "master_bl_number": "MSCU753734397",
+    "house_bl_number": "HBL7182148",
+    "coo_number": "CO/2026038/828",
+    "coo_issue_date": "2026-03-30",
+    "has_wooden_packaging": false
+  }
+}

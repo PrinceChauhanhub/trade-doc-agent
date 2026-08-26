@@ -1,0 +1,65 @@
+{
+  "shipment_id": "AUSYD-2026-0046",
+  "documents": [
+    "bill_of_lading.pdf",
+    "certificate_of_origin.pdf",
+    "commercial_invoice.pdf",
+    "fumigation_certificate.pdf",
+    "packing_list.pdf",
+    "vgm_certificate.pdf"
+  ],
+  "expected_findings": [],
+  "is_clean": true,
+  "true_values": {
+    "shipment_id": "AUSYD-2026-0046",
+    "cargo_type": "LCL",
+    "invoice_number": "INV/9718/2026",
+    "invoice_date": "2026-01-11",
+    "exporter_name": "Rajesh Textiles Pvt Ltd",
+    "exporter_country": "India",
+    "importer_name": "Southern Cross Homewares",
+    "importer_country": "Australia",
+    "origin_country": "India",
+    "incoterms": "EXW",
+    "currency": "USD",
+    "goods_value": 29646.0,
+    "invoice_total": 29646.0,
+    "line_items": [
+      {
+        "description": "Brass Decorative Items",
+        "hs_code": "8306.29",
+        "quantity": 400,
+        "unit_price": 38.64,
+        "line_total": 15456.0
+      },
+      {
+        "description": "Wooden Photo Frames",
+        "hs_code": "4414.90",
+        "quantity": 1000,
+        "unit_price": 14.19,
+        "line_total": 14190.0
+      }
+    ],
+    "total_packages": 62,
+    "total_net_weight_kg": 1109.99,
+    "total_gross_weight_kg": 1192.57,
+    "total_cbm": 5.988,
+    "container_number": "GESU9189100",
+    "container_size_type": "20GP",
+    "seal_number": "SL1432665",
+    "vgm_kg": 3457.928,
+    "vessel_name": "MAERSK KALAMATA",
+    "vessel_imo": "9784271",
+    "voyage_number": "325N",
+    "port_of_loading": "INMAA",
+    "port_of_discharge": "AUSYD",
+    "bl_date": "2026-01-18",
+    "etd": "2026-01-18",
+    "eta": "2026-02-08",
+    "master_bl_number": "CMDU344176103",
+    "house_bl_number": "HBL8972821",
+    "coo_number": "CO/2026177/957",
+    "coo_issue_date": "2026-01-17",
+    "has_wooden_packaging": true
+  }
+}

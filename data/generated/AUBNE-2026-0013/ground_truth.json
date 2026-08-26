@@ -1,0 +1,65 @@
+{
+  "shipment_id": "AUBNE-2026-0013",
+  "documents": [
+    "bill_of_lading.pdf",
+    "certificate_of_origin.pdf",
+    "commercial_invoice.pdf",
+    "fumigation_certificate.pdf",
+    "packing_list.pdf",
+    "vgm_certificate.pdf"
+  ],
+  "expected_findings": [],
+  "is_clean": true,
+  "true_values": {
+    "shipment_id": "AUBNE-2026-0013",
+    "cargo_type": "FCL",
+    "invoice_number": "INV/2924/2026",
+    "invoice_date": "2026-01-08",
+    "exporter_name": "Kerala Spice Traders",
+    "exporter_country": "India",
+    "importer_name": "Coastline Apparel Pty Ltd",
+    "importer_country": "Australia",
+    "origin_country": "India",
+    "incoterms": "CIF",
+    "currency": "USD",
+    "goods_value": 515220.0,
+    "invoice_total": 531925.46,
+    "line_items": [
+      {
+        "description": "Cotton Bed Sheets, Printed",
+        "hs_code": "6302.21",
+        "quantity": 3000,
+        "unit_price": 35.5,
+        "line_total": 106500.0
+      },
+      {
+        "description": "Leather Handbags",
+        "hs_code": "4202.21",
+        "quantity": 6000,
+        "unit_price": 68.12,
+        "line_total": 408720.0
+      }
+    ],
+    "total_packages": 299,
+    "total_net_weight_kg": 6900.062,
+    "total_gross_weight_kg": 7564.908,
+    "total_cbm": 15.21,
+    "container_number": "CMAU3053992",
+    "container_size_type": "40HC",
+    "seal_number": "SL1595081",
+    "vgm_kg": 11485.706,
+    "vessel_name": "ANL WYONG",
+    "vessel_imo": "9463855",
+    "voyage_number": "374N",
+    "port_of_loading": "INCOK",
+    "port_of_discharge": "AUBNE",
+    "bl_date": "2026-01-16",
+    "etd": "2026-01-16",
+    "eta": "2026-02-09",
+    "master_bl_number": "CMDU238432443",
+    "house_bl_number": null,
+    "coo_number": "CO/2026043/380",
+    "coo_issue_date": "2026-01-13",
+    "has_wooden_packaging": true
+  }
+}

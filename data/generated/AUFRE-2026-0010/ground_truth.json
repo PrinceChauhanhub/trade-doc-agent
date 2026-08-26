@@ -1,0 +1,84 @@
+{
+  "shipment_id": "AUFRE-2026-0010",
+  "documents": [
+    "bill_of_lading.pdf",
+    "certificate_of_origin.pdf",
+    "commercial_invoice.pdf",
+    "packing_list.pdf",
+    "vgm_certificate.pdf"
+  ],
+  "expected_findings": [
+    {
+      "type": "PACKAGE_COUNT_MISMATCH",
+      "severity": "WARNING",
+      "summary": "Package count differs between packing list and bill of lading",
+      "sources": [
+        "packing_list.total_packages",
+        "bill_of_lading.package_count"
+      ],
+      "details": {
+        "packing_list": 38,
+        "bill_of_lading": 40
+      }
+    },
+    {
+      "type": "CONSIGNEE_MISMATCH",
+      "severity": "WARNING",
+      "summary": "Consignee name differs between invoice and bill of lading",
+      "sources": [
+        "invoice.importer.name",
+        "bill_of_lading.importer.name"
+      ],
+      "details": {
+        "invoice": "Westline Trading Pty Ltd",
+        "bill_of_lading": "Westline Trading Pty. Limited"
+      }
+    }
+  ],
+  "is_clean": false,
+  "true_values": {
+    "shipment_id": "AUFRE-2026-0010",
+    "cargo_type": "LCL",
+    "invoice_number": "INV/6002/2026",
+    "invoice_date": "2026-02-01",
+    "exporter_name": "Punjab Cotton Mills",
+    "exporter_country": "India",
+    "importer_name": "Westline Trading Pty Ltd",
+    "importer_country": "Australia",
+    "origin_country": "India",
+    "incoterms": "FOB",
+    "currency": "USD",
+    "goods_value": 20520.0,
+    "invoice_total": 20520.0,
+    "line_items": [
+      {
+        "description": "Cotton Bath Towels",
+        "hs_code": "6302.60",
+        "quantity": 2000,
+        "unit_price": 10.26,
+        "line_total": 20520.0
+      }
+    ],
+    "total_packages": 38,
+    "total_net_weight_kg": 899.992,
+    "total_gross_weight_kg": 975.346,
+    "total_cbm": 3.192,
+    "container_number": "CMAU8954606",
+    "container_size_type": "40HC",
+    "seal_number": "SL1065022",
+    "vgm_kg": 4900.255,
+    "vessel_name": "OOCL BRISBANE",
+    "vessel_imo": "9622889",
+    "voyage_number": "242S",
+    "port_of_loading": "INMAA",
+    "port_of_discharge": "AUFRE",
+    "bl_date": "2026-02-16",
+    "etd": "2026-02-16",
+    "eta": "2026-03-07",
+    "master_bl_number": "MSCU745138857",
+    "house_bl_number": "HBL9672352",
+    "coo_number": "CO/2026418/862",
+    "coo_issue_date": "2026-02-04",
+    "has_wooden_packaging": false
+  }
+}

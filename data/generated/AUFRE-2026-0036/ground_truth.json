@@ -1,0 +1,72 @@
+{
+  "shipment_id": "AUFRE-2026-0036",
+  "documents": [
+    "bill_of_lading.pdf",
+    "certificate_of_origin.pdf",
+    "commercial_invoice.pdf",
+    "fumigation_certificate.pdf",
+    "packing_list.pdf",
+    "vgm_certificate.pdf"
+  ],
+  "expected_findings": [],
+  "is_clean": true,
+  "true_values": {
+    "shipment_id": "AUFRE-2026-0036",
+    "cargo_type": "FCL",
+    "invoice_number": "INV/9818/2026",
+    "invoice_date": "2026-06-01",
+    "exporter_name": "Rajesh Textiles Pvt Ltd",
+    "exporter_country": "India",
+    "importer_name": "Southern Cross Homewares",
+    "importer_country": "Australia",
+    "origin_country": "India",
+    "incoterms": "CFR",
+    "currency": "USD",
+    "goods_value": 305090.0,
+    "invoice_total": 310883.09,
+    "line_items": [
+      {
+        "description": "Ceramic Tableware, Porcelain",
+        "hs_code": "6911.10",
+        "quantity": 6000,
+        "unit_price": 10.87,
+        "line_total": 65220.0
+      },
+      {
+        "description": "Cotton Bath Towels",
+        "hs_code": "6302.60",
+        "quantity": 3000,
+        "unit_price": 27.69,
+        "line_total": 83070.0
+      },
+      {
+        "description": "Cotton Bed Sheets, Printed",
+        "hs_code": "6302.21",
+        "quantity": 5000,
+        "unit_price": 31.36,
+        "line_total": 156800.0
+      }
+    ],
+    "total_packages": 392,
+    "total_net_weight_kg": 9749.984,
+    "total_gross_weight_kg": 10526.697,
+    "total_cbm": 29.312,
+    "container_number": "CMAU2780256",
+    "container_size_type": "40HC",
+    "seal_number": "SL7103031",
+    "vgm_kg": 14451.335,
+    "vessel_name": "OOCL BRISBANE",
+    "vessel_imo": "9622889",
+    "voyage_number": "205N",
+    "port_of_loading": "INCOK",
+    "port_of_discharge": "AUFRE",
+    "bl_date": "2026-06-09",
+    "etd": "2026-06-09",
+    "eta": "2026-07-03",
+    "master_bl_number": "MAEU875252816",
+    "house_bl_number": null,
+    "coo_number": "CO/2026109/199",
+    "coo_issue_date": "2026-06-02",
+    "has_wooden_packaging": true
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "shipment_id": "AUFRE-2026-0017",
+  "documents": [
+    "bill_of_lading.pdf",
+    "certificate_of_origin.pdf",
+    "commercial_invoice.pdf",
+    "packing_list.pdf",
+    "vgm_certificate.pdf"
+  ],
+  "expected_findings": [
+    {
+      "type": "ORIGIN_MISMATCH",
+      "severity": "CRITICAL",
+      "summary": "Country of origin differs between invoice and certificate of origin",
+      "sources": [
+        "invoice.origin_country",
+        "certificate_of_origin.origin_country"
+      ],
+      "details": {
+        "invoice": "India",
+        "coo": "Bangladesh"
+      }
+    }
+  ],
+  "is_clean": false,
+  "true_values": {
+    "shipment_id": "AUFRE-2026-0017",
+    "cargo_type": "LCL",
+    "invoice_number": "INV/3121/2026",
+    "invoice_date": "2026-01-05",
+    "exporter_name": "Gujarat Handicrafts Co",
+    "exporter_country": "India",
+    "importer_name": "Harbour Retail Group",
+    "importer_country": "Australia",
+    "origin_country": "India",
+    "incoterms": "CIF",
+    "currency": "USD",
+    "goods_value": 91213.0,
+    "invoice_total": 93726.87,
+    "line_items": [
+      {
+        "description": "Brass Decorative Items",
+        "hs_code": "8306.29",
+        "quantity": 1000,
+        "unit_price": 36.22,
+        "line_total": 36220.0
+      },
+      {
+        "description": "Cotton Bath Towels",
+        "hs_code": "6302.60",
+        "quantity": 1500,
+        "unit_price": 18.17,
+        "line_total": 27255.0
+      },
+      {
+        "description": "Stainless Steel Kitchenware",
+        "hs_code": "7323.93",
+        "quantity": 800,
+        "unit_price": 15.96,
+        "line_total": 12768.0
+      },
+      {
+        "description": "Wooden Photo Frames",
+        "hs_code": "4414.90",
+        "quantity": 1000,
+        "unit_price": 14.97,
+        "line_total": 14970.0
+      }
+    ],
+    "total_packages": 163,
+    "total_net_weight_kg": 3584.994,
+    "total_gross_weight_kg": 3960.066,
+    "total_cbm": 9.89,
+    "container_number": "OOLU4717168",
+    "container_size_type": "20GP",
+    "seal_number": "SL9150272",
+    "vgm_kg": 6202.696,
+    "vessel_name": "ANL WYONG",
+    "vessel_imo": "9463855",
+    "voyage_number": "210W",
+    "port_of_loading": "INMAA",
+    "port_of_discharge": "AUFRE",
+    "bl_date": "2026-01-18",
+    "etd": "2026-01-18",
+    "eta": "2026-02-06",
+    "master_bl_number": "MSCU868992352",
+    "house_bl_number": "HBL8132373",
+    "coo_number": "CO/2026093/165",
+    "coo_issue_date": "2026-01-07",
+    "has_wooden_packaging": false
+  }
+}

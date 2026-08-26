@@ -1,0 +1,97 @@
+{
+  "shipment_id": "AUSYD-2026-0049",
+  "documents": [
+    "bill_of_lading.pdf",
+    "certificate_of_origin.pdf",
+    "commercial_invoice.pdf",
+    "packing_list.pdf",
+    "vgm_certificate.pdf"
+  ],
+  "expected_findings": [
+    {
+      "type": "ORIGIN_MISMATCH",
+      "severity": "CRITICAL",
+      "summary": "Country of origin differs between invoice and certificate of origin",
+      "sources": [
+        "invoice.origin_country",
+        "certificate_of_origin.origin_country"
+      ],
+      "details": {
+        "invoice": "India",
+        "coo": "China"
+      }
+    },
+    {
+      "type": "HS_CODE_MISMATCH",
+      "severity": "CRITICAL",
+      "summary": "HS code differs between invoice and certificate of origin",
+      "sources": [
+        "invoice.line_items[0].hs_code",
+        "certificate_of_origin.hs_code"
+      ],
+      "details": {
+        "invoice": "8306.29",
+        "coo": "8305.29"
+      }
+    },
+    {
+      "type": "PACKAGE_COUNT_MISMATCH",
+      "severity": "WARNING",
+      "summary": "Package count differs between packing list and bill of lading",
+      "sources": [
+        "packing_list.total_packages",
+        "bill_of_lading.package_count"
+      ],
+      "details": {
+        "packing_list": 257,
+        "bill_of_lading": 258
+      }
+    }
+  ],
+  "is_clean": false,
+  "true_values": {
+    "shipment_id": "AUSYD-2026-0049",
+    "cargo_type": "FCL",
+    "invoice_number": "INV/4891/2026",
+    "invoice_date": "2026-06-23",
+    "exporter_name": "Rajesh Textiles Pvt Ltd",
+    "exporter_country": "India",
+    "importer_name": "Coastline Apparel Pty Ltd",
+    "importer_country": "Australia",
+    "origin_country": "India",
+    "incoterms": "EXW",
+    "currency": "USD",
+    "goods_value": 75760.0,
+    "invoice_total": 75760.0,
+    "line_items": [
+      {
+        "description": "Brass Decorative Items",
+        "hs_code": "8306.29",
+        "quantity": 4000,
+        "unit_price": 18.94,
+        "line_total": 75760.0
+      }
+    ],
+    "total_packages": 257,
+    "total_net_weight_kg": 5600.03,
+    "total_gross_weight_kg": 6052.35,
+    "total_cbm": 21.588,
+    "container_number": "CMAU5182495",
+    "container_size_type": "40GP",
+    "seal_number": "SL9008778",
+    "vgm_kg": 9830.726,
+    "vessel_name": "MSC RITA",
+    "vessel_imo": "9484469",
+    "voyage_number": "416E",
+    "port_of_loading": "INMAA",
+    "port_of_discharge": "AUSYD",
+    "bl_date": "2026-07-05",
+    "etd": "2026-07-05",
+    "eta": "2026-07-28",
+    "master_bl_number": "MAEU588255001",
+    "house_bl_number": null,
+    "coo_number": "CO/2026894/450",
+    "coo_issue_date": "2026-06-27",
+    "has_wooden_packaging": false
+  }
+}

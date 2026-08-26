@@ -1,0 +1,79 @@
+{
+  "shipment_id": "AUMEL-2026-0045",
+  "documents": [
+    "bill_of_lading.pdf",
+    "certificate_of_origin.pdf",
+    "commercial_invoice.pdf",
+    "fumigation_certificate.pdf",
+    "packing_list.pdf",
+    "vgm_certificate.pdf"
+  ],
+  "expected_findings": [],
+  "is_clean": true,
+  "true_values": {
+    "shipment_id": "AUMEL-2026-0045",
+    "cargo_type": "LCL",
+    "invoice_number": "INV/4457/2026",
+    "invoice_date": "2026-05-18",
+    "exporter_name": "Punjab Cotton Mills",
+    "exporter_country": "India",
+    "importer_name": "Southern Cross Homewares",
+    "importer_country": "Australia",
+    "origin_country": "India",
+    "incoterms": "CFR",
+    "currency": "USD",
+    "goods_value": 72935.0,
+    "invoice_total": 74920.37,
+    "line_items": [
+      {
+        "description": "Men's T-Shirts, 100% Cotton, Knitted",
+        "hs_code": "6109.10",
+        "quantity": 1500,
+        "unit_price": 23.53,
+        "line_total": 35295.0
+      },
+      {
+        "description": "Wooden Photo Frames",
+        "hs_code": "4414.90",
+        "quantity": 600,
+        "unit_price": 13.66,
+        "line_total": 8196.0
+      },
+      {
+        "description": "Cotton Bed Sheets, Printed",
+        "hs_code": "6302.21",
+        "quantity": 400,
+        "unit_price": 25.26,
+        "line_total": 10104.0
+      },
+      {
+        "description": "Rubber Floor Mats",
+        "hs_code": "4016.91",
+        "quantity": 2000,
+        "unit_price": 9.67,
+        "line_total": 19340.0
+      }
+    ],
+    "total_packages": 215,
+    "total_net_weight_kg": 5040.081,
+    "total_gross_weight_kg": 5517.206,
+    "total_cbm": 19.37,
+    "container_number": "GESU3282685",
+    "container_size_type": "40HC",
+    "seal_number": "SL7689187",
+    "vgm_kg": 9435.151,
+    "vessel_name": "MSC RITA",
+    "vessel_imo": "9484469",
+    "voyage_number": "203S",
+    "port_of_loading": "INMAA",
+    "port_of_discharge": "AUMEL",
+    "bl_date": "2026-05-31",
+    "etd": "2026-05-31",
+    "eta": "2026-06-23",
+    "master_bl_number": "MAEU974576530",
+    "house_bl_number": "HBL2241836",
+    "coo_number": "CO/2026323/495",
+    "coo_issue_date": "2026-05-19",
+    "has_wooden_packaging": true
+  }
+}

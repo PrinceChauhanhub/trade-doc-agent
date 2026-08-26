@@ -1,0 +1,65 @@
+{
+  "shipment_id": "AUBNE-2026-0019",
+  "documents": [
+    "bill_of_lading.pdf",
+    "certificate_of_origin.pdf",
+    "commercial_invoice.pdf",
+    "fumigation_certificate.pdf",
+    "packing_list.pdf",
+    "vgm_certificate.pdf"
+  ],
+  "expected_findings": [],
+  "is_clean": true,
+  "true_values": {
+    "shipment_id": "AUBNE-2026-0019",
+    "cargo_type": "LCL",
+    "invoice_number": "INV/5201/2026",
+    "invoice_date": "2026-03-28",
+    "exporter_name": "Kerala Spice Traders",
+    "exporter_country": "India",
+    "importer_name": "Harbour Retail Group",
+    "importer_country": "Australia",
+    "origin_country": "India",
+    "incoterms": "CIF",
+    "currency": "USD",
+    "goods_value": 91930.0,
+    "invoice_total": 94517.75,
+    "line_items": [
+      {
+        "description": "Stainless Steel Kitchenware",
+        "hs_code": "7323.93",
+        "quantity": 1000,
+        "unit_price": 9.26,
+        "line_total": 9260.0
+      },
+      {
+        "description": "Leather Handbags",
+        "hs_code": "4202.21",
+        "quantity": 1000,
+        "unit_price": 82.67,
+        "line_total": 82670.0
+      }
+    ],
+    "total_packages": 98,
+    "total_net_weight_kg": 2050.026,
+    "total_gross_weight_kg": 2238.298,
+    "total_cbm": 13.824,
+    "container_number": "OOLU4855450",
+    "container_size_type": "20GP",
+    "seal_number": "SL4576580",
+    "vgm_kg": 4495.466,
+    "vessel_name": "ANL WYONG",
+    "vessel_imo": "9463855",
+    "voyage_number": "261W",
+    "port_of_loading": "INMAA",
+    "port_of_discharge": "AUBNE",
+    "bl_date": "2026-04-07",
+    "etd": "2026-04-07",
+    "eta": "2026-04-30",
+    "master_bl_number": "MSCU454379484",
+    "house_bl_number": "HBL2986541",
+    "coo_number": "CO/2026130/243",
+    "coo_issue_date": "2026-04-03",
+    "has_wooden_packaging": true
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "shipment_id": "AUBNE-2026-0033",
+  "documents": [
+    "bill_of_lading.pdf",
+    "certificate_of_origin.pdf",
+    "commercial_invoice.pdf",
+    "packing_list.pdf",
+    "vgm_certificate.pdf"
+  ],
+  "expected_findings": [
+    {
+      "type": "CONSIGNEE_MISMATCH",
+      "severity": "WARNING",
+      "summary": "Consignee name differs between invoice and bill of lading",
+      "sources": [
+        "invoice.importer.name",
+        "bill_of_lading.importer.name"
+      ],
+      "details": {
+        "invoice": "Coastline Apparel Pty Ltd",
+        "bill_of_lading": "Coastline Apparel Pty. Limited"
+      }
+    },
+    {
+      "type": "MISSING_FUMIGATION_CERT",
+      "severity": "CRITICAL",
+      "summary": "Wooden packaging declared but no ISPM-15 treatment evidence supplied",
+      "sources": [
+        "packing_list.package_types"
+      ],
+      "details": {
+        "package_types": [
+          "PALLET"
+        ]
+      }
+    }
+  ],
+  "is_clean": false,
+  "true_values": {
+    "shipment_id": "AUBNE-2026-0033",
+    "cargo_type": "FCL",
+    "invoice_number": "INV/9318/2026",
+    "invoice_date": "2026-03-21",
+    "exporter_name": "Rajesh Textiles Pvt Ltd",
+    "exporter_country": "India",
+    "importer_name": "Coastline Apparel Pty Ltd",
+    "importer_country": "Australia",
+    "origin_country": "India",
+    "incoterms": "EXW",
+    "currency": "USD",
+    "goods_value": 287100.0,
+    "invoice_total": 287100.0,
+    "line_items": [
+      {
+        "description": "Cotton Bed Sheets, Printed",
+        "hs_code": "6302.21",
+        "quantity": 10000,
+        "unit_price": 28.71,
+        "line_total": 287100.0
+      }
+    ],
+    "total_packages": 383,
+    "total_net_weight_kg": 6000.078,
+    "total_gross_weight_kg": 6709.011,
+    "total_cbm": 18.097,
+    "container_number": "GESU4305240",
+    "container_size_type": "40GP",
+    "seal_number": "SL1786401",
+    "vgm_kg": 10472.5,
+    "vessel_name": "MSC RITA",
+    "vessel_imo": "9484469",
+    "voyage_number": "471S",
+    "port_of_loading": "INNSA",
+    "port_of_discharge": "AUBNE",
+    "bl_date": "2026-03-29",
+    "etd": "2026-03-29",
+    "eta": "2026-04-20",
+    "master_bl_number": "CMDU482249093",
+    "house_bl_number": null,
+    "coo_number": "CO/2026753/474",
+    "coo_issue_date": "2026-03-24",
+    "has_wooden_packaging": true
+  }
+}

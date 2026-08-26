@@ -1,0 +1,85 @@
+{
+  "shipment_id": "AUBNE-2026-0011",
+  "documents": [
+    "bill_of_lading.pdf",
+    "certificate_of_origin.pdf",
+    "commercial_invoice.pdf",
+    "fumigation_certificate.pdf",
+    "packing_list.pdf",
+    "vgm_certificate.pdf"
+  ],
+  "expected_findings": [
+    {
+      "type": "PACKAGE_COUNT_MISMATCH",
+      "severity": "WARNING",
+      "summary": "Package count differs between packing list and bill of lading",
+      "sources": [
+        "packing_list.total_packages",
+        "bill_of_lading.package_count"
+      ],
+      "details": {
+        "packing_list": 68,
+        "bill_of_lading": 67
+      }
+    },
+    {
+      "type": "CONSIGNEE_MISMATCH",
+      "severity": "WARNING",
+      "summary": "Consignee name differs between invoice and bill of lading",
+      "sources": [
+        "invoice.importer.name",
+        "bill_of_lading.importer.name"
+      ],
+      "details": {
+        "invoice": "Westline Trading Pty Ltd",
+        "bill_of_lading": "Westline Trading Pty. Limited"
+      }
+    }
+  ],
+  "is_clean": false,
+  "true_values": {
+    "shipment_id": "AUBNE-2026-0011",
+    "cargo_type": "LCL",
+    "invoice_number": "INV/5518/2026",
+    "invoice_date": "2026-04-29",
+    "exporter_name": "Gujarat Handicrafts Co",
+    "exporter_country": "India",
+    "importer_name": "Westline Trading Pty Ltd",
+    "importer_country": "Australia",
+    "origin_country": "India",
+    "incoterms": "CIF",
+    "currency": "USD",
+    "goods_value": 68940.0,
+    "invoice_total": 69981.68,
+    "line_items": [
+      {
+        "description": "Cotton Bed Sheets, Printed",
+        "hs_code": "6302.21",
+        "quantity": 2000,
+        "unit_price": 34.47,
+        "line_total": 68940.0
+      }
+    ],
+    "total_packages": 68,
+    "total_net_weight_kg": 1199.996,
+    "total_gross_weight_kg": 1310.156,
+    "total_cbm": 4.131,
+    "container_number": "OOLU8183081",
+    "container_size_type": "40HC",
+    "seal_number": "SL3753791",
+    "vgm_kg": 5235.572,
+    "vessel_name": "CMA CGM CENDRILLON",
+    "vessel_imo": "9410046",
+    "voyage_number": "359S",
+    "port_of_loading": "INNSA",
+    "port_of_discharge": "AUBNE",
+    "bl_date": "2026-05-09",
+    "etd": "2026-05-09",
+    "eta": "2026-05-30",
+    "master_bl_number": "CMDU199915371",
+    "house_bl_number": "HBL7743161",
+    "coo_number": "CO/2026651/805",
+    "coo_issue_date": "2026-05-04",
+    "has_wooden_packaging": true
+  }
+}
